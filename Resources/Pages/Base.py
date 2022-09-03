@@ -1,4 +1,4 @@
-from re import T
+import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
@@ -6,11 +6,9 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 
 import os, sys, inspect
-# fetch path to the directory in which current file is, from root directory or C:\ (or whatever driver number it is)
+
 currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
-# extract the path to parent directory
 parentdir = os.path.dirname(currentdir)
-# insert path to the folder from parent directory from which the python module/ file is to be imported
 sys.path.insert(0, parentdir)
 
 from Locators import Locators
@@ -29,7 +27,7 @@ class BasePage():
 
     def assert_element_text(self, by_locator, element_text):
         web_element = WebDriverWait(self.driver, self.delay).until(EC.visibility_of_element_located(by_locator))
-        assert web_element == element_text
+        assert web_element.text == element_text
 
 
     def enter_text(self, by_locator, text):
@@ -68,12 +66,15 @@ class HomePage(BasePage):
     def contact(self):
         pass
 
+    def click_on_my_account_menu_navbar(self):
+        self.click(Locators.MY_ACCOUNT_MENU_NAVBAR)
+
     def go_to_register_page(self):
         self.click(Locators.MY_ACCOUNT_MENU_NAVBAR)
         self.click(Locators.REGISTER_SUBMENU_NAVBAR)
 
-    def login(self):
-        pass
+    def go_to_login_page(self):
+        self.click(Locators.LOGIN_SUBMENU_NAVBAR)
 
     def wishlist(self):
         pass
@@ -85,10 +86,9 @@ class HomePage(BasePage):
         pass
 
 class RegisterPage(BasePage):
-    """Register Page"""
+
     def __init__(self, driver):
         super().__init__(driver)
-        # self.driver.get(TestData.REGISTER_URL)
 
     def fill_in_all_fields(self):
         self.enter_text(Locators.FIRST_NAME_TEXT_FIELD, TestData.FIRST_NAME)
@@ -96,20 +96,72 @@ class RegisterPage(BasePage):
         self.enter_text(Locators.EMAIL_TEXT_FIELD, TestData.EMAIL)
         self.enter_text(Locators.PASSWORD_TEXT_FIELD, TestData.PASSWORD)
 
+    def subscribe_newsletter(self):
+        self.click(Locators.NEWSLETTER_SUBSCRIBE_YES_RADIO_BUTTON)
+
     def read_and_agree(self):
         self.click(Locators.AGREEMENT_CHECK_BOX)
     
     def continue_to_register(self):
         self.click(Locators.CONTINUE_BUTTON)
+        time.sleep(5)
 
     def display_warning_message(self):
-        pass
+        self.assert_element_text(Locators.FIRST_NAME_ERROR_TEXT, TestData.FIRST_NAME_ERROR_MESSAGE)
+        self.assert_element_text(Locators.LAST_NAME_ERROR_TEXT, TestData.LAST_NAME_ERROR_MESSAGE)
+        self.assert_element_text(Locators.EMAIL_ERROR_TEXT, TestData.EMAIL_ERROR_MESSAGE)
+        self.assert_element_text(Locators.PASSWORD_ERROR_TEXT, TestData.PASSWORD_ERROR_MESSAGE)
+        self.assert_element_text(Locators.RIGHT_CORNER_ERROR_TEXT, TestData.PRIVACY_POLICY_ERROR_MESSAGE)
+
+    def display_email_registered_warning_message(self):
+        self.assert_element_text(Locators.RIGHT_CORNER_ERROR_TEXT, TestData.EMAIL_REGISTERED_ERROR_MESSAGE)
+
+class LoginPage(BasePage):
+    def __init__(self, driver):
+        super().__init__(driver)
+
+    def register_new_customer(self):
+        self.click(Locators.GENERAL_CONTINUE_BUTTON)
 
 class SuccessPage(BasePage):
-    """Success Page"""
+
     def __init__(self, driver):
         super().__init__(driver)
 
     def continue_to_my_account_page(self):
         self.is_visible(Locators.PAGE_TITLE_TEXT)
         self.click(Locators.CONTINUE_BUTTON_AFTER_SUCCESS)
+
+class NewsletterPage(BasePage):
+
+    def __init__(self, driver):
+        super().__init__(driver)
+
+    # def check_default_subscribe_radio_button(self):
+    #     self.get_attribute_by_value(Locators.NEWSLETTER_SUBSCRIBE_YES_RADIO_BUTTON)
+
+class MainMenu(BasePage):
+    
+    def __init__(self, driver):
+        super().__init__(driver)
+    
+    def click_on_my_account_menu_navbar(self):
+        self.click(Locators.MY_ACCOUNT_MENU_NAVBAR)
+
+    def go_to_register_page(self):
+        self.click(Locators.MY_ACCOUNT_MENU_NAVBAR)
+        self.click(Locators.REGISTER_SUBMENU_NAVBAR)
+
+    def go_to_login_page(self):
+        self.click(Locators.LOGIN_SUBMENU_NAVBAR)
+
+class RightMenu(BasePage):
+
+    def __init__(self, driver):
+        super().__init__(driver)
+
+    def go_to_newletter_page_from_right_menu(self):
+        self.click(Locators.NEWSLETTER_MENU_RIGHT_NAV)
+
+    def go_to_register_page_from_right_menu(self):
+        self.click(Locators.REGISTER_MENU_RIGHT_NAV)
