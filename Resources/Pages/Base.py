@@ -123,6 +123,35 @@ class LoginPage(BasePage):
     def register_new_customer(self):
         self.click(Locators.GENERAL_CONTINUE_BUTTON)
 
+    def fill_in_all_fields_with_invalid_credentials(self):
+        self.enter_text(Locators.EMAIL_TEXT_FIELD, TestData.EMAIL_2)
+        self.enter_text(Locators.PASSWORD_TEXT_FIELD, TestData.PASSWORD_2)
+
+    def fill_in_all_fields_with_valid_credentials(self):
+        self.enter_text(Locators.EMAIL_TEXT_FIELD, TestData.EMAIL)
+        self.enter_text(Locators.PASSWORD_TEXT_FIELD, TestData.PASSWORD)
+
+    def continue_to_login(self):
+        self.click(Locators.CONTINUE_BUTTON)
+        time.sleep(5)
+
+    def display_failed_credentials_warning_message(self):
+        self.assert_element_text(Locators.RIGHT_CORNER_ERROR_TEXT, TestData.INVALID_CREDENTIALS_ERROR_MESSAGE)
+
+class LogoutPage(BasePage):
+
+    def __init__(self, driver):
+        super().__init__(driver)
+    
+    def go_to_home_page(self):
+        self.click(Locators.GENERAL_CONTINUE_BUTTON)
+
+class MyAccountPage(BasePage):
+
+    def __init__(self, driver):
+        super().__init__(driver)
+
+
 class SuccessPage(BasePage):
 
     def __init__(self, driver):
@@ -155,6 +184,23 @@ class MainMenu(BasePage):
     def go_to_login_page(self):
         self.click(Locators.LOGIN_SUBMENU_NAVBAR)
 
+    def go_to_logout_page(self):
+        self.click(Locators.LOGOUT_SUBMENU_NAVBAR)
+        time.sleep(5)
+
+
+class ActionSection(BasePage):
+
+    def __init__(self, driver):
+        super().__init__(driver)
+
+    def fill_in_search_field(self):
+        self.enter_text(Locators.SEARCH_BAR, TestData.SEARCH_TERM)
+    
+    def click_on_search_button(self):
+        self.click(Locators.SEARCH_BUTTON)
+
+
 class RightMenu(BasePage):
 
     def __init__(self, driver):
@@ -165,3 +211,6 @@ class RightMenu(BasePage):
 
     def go_to_register_page_from_right_menu(self):
         self.click(Locators.REGISTER_MENU_RIGHT_NAV)
+
+    def go_to_login_page_from_right_menu(self):
+        self.click(Locators.LOGIN_MENU_RIGHT_NAV)

@@ -30,6 +30,8 @@ class TestData():
     REGISTER_PAGE_TITLE = "Register Account"
     LOGIN_PAGE_TITLE = "Account Login"
     SUCCESS_PAGE_TITLE = "Your Account Has Been Created!"
+    MY_ACCOUNT_PAGE_TITLE = "My Account"
+    LOGOUT_PAGE_TITLE = "Account Logout"
 
 
     # Warning and Error Message
@@ -39,9 +41,13 @@ class TestData():
     PASSWORD_ERROR_MESSAGE = "Password must be between 4 and 20 characters!"
     PRIVACY_POLICY_ERROR_MESSAGE = "Warning: You must agree to the Privacy Policy!"
     EMAIL_REGISTERED_ERROR_MESSAGE = "Warning: E-mail Address is already registered!"
+    INVALID_CREDENTIALS_ERROR_MESSAGE = "Warning: No match for E-Mail Address and/or Password."
 
     # Radio Button
     RADIOBUTTON_YES_VALUE = 1
     RADIOBUTTON_NO_VALUE = 0
 
     # ATTRIBUTE_1 = "value"
+
+    #
+    SEARCH_TERM = "iMac"
