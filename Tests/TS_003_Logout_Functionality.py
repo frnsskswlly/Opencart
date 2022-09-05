@@ -32,6 +32,8 @@ class Test_Logout_Functionality_Base(unittest.TestCase):
         self.driver.implicitly_wait(10)
         self.delay = 10
 
+        
+
     def tearDown(self):
         self.driver.close()
         self.driver.quit()

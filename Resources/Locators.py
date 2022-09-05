@@ -79,6 +79,8 @@ class Locators():
 
     GENERAL_CONTINUE_BUTTON = (By.XPATH, '//a[@class="btn btn-primary"]')
 
+    SEARCH_RESULTS = (By.XPATH, '//div[@id="product-list"]//div[@class="description"]//h4')
+
 
     # Warning and Error Message
 

@@ -5,6 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 import unittest
 import HtmlTestRunner
+import time
 
 
 import os, sys, inspect
@@ -30,6 +31,9 @@ class Test_Register_Functionality_Base(unittest.TestCase):
         self.driver.implicitly_wait(10)
         self.delay = 10
 
+        self.homePage = HomePage(self.driver)
+        self.assertIn(TestData.HOME_PAGE_TITLE, self.homePage.driver.title)
+
     def tearDown(self):
         self.driver.close()
         self.driver.quit()
@@ -40,13 +44,9 @@ class Test_Register_Functionality(Test_Register_Functionality_Base):
         super().setUp()
 
     def test_TC_RF_003_validate_registering_an_account_by_filling_in_all_fields(self):
-        self.homePage = HomePage(self.driver)
         self.mainMenu = MainMenu(self.driver)
         self.registerPage = RegisterPage(self.driver)
         self.successPage = SuccessPage(self.driver)
-
-        #
-        self.assertIn(TestData.HOME_PAGE_TITLE, self.homePage.driver.title)
 
         self.mainMenu.click_on_my_account_menu_navbar()
         self.mainMenu.go_to_register_page()
@@ -62,11 +62,9 @@ class Test_Register_Functionality(Test_Register_Functionality_Base):
     
 
     def test_TC_RF_004_validate_registering_an_account_without_filling_in_all_fields(self):
-        self.homePage = HomePage(self.driver)
+        
         self.mainMenu = MainMenu(self.driver)
         self.registerPage = RegisterPage(self.driver)
-
-        self.assertIn(TestData.HOME_PAGE_TITLE, self.homePage.driver.title)
 
         self.mainMenu.click_on_my_account_menu_navbar()
         self.mainMenu.go_to_register_page()
@@ -77,13 +75,13 @@ class Test_Register_Functionality(Test_Register_Functionality_Base):
 
     # def test_TC_RF_004_validate_registering_an_account_with_subscribing_the_newsletter(self):
     def test_TC_RF_005(self):
-        self.homePage = HomePage(self.driver)
+        
         self.mainMenu = MainMenu(self.driver)
         self.registerPage = RegisterPage(self.driver)
         self.rightMenu = RightMenu(self.driver)
         self.successPage = SuccessPage(self.driver)
 
-        self.assertIn(TestData.HOME_PAGE_TITLE, self.homePage.driver.title)
+        
 
         self.mainMenu.click_on_my_account_menu_navbar()
         self.mainMenu.go_to_register_page()
@@ -102,13 +100,13 @@ class Test_Register_Functionality(Test_Register_Functionality_Base):
         self.assertTrue(self.driver.find_element(By.XPATH, '//input[@id = "input-newsletter-yes"]').get_attribute('value'), TestData.RADIOBUTTON_YES_VALUE)
 
     def test_TC_RF_006(self):
-        self.homePage = HomePage(self.driver)
+        
         self.mainMenu = MainMenu(self.driver)
         self.registerPage = RegisterPage(self.driver)
         self.successPage = SuccessPage(self.driver)
         self.rightMenu = RightMenu(self.driver)
 
-        self.assertIn(TestData.HOME_PAGE_TITLE, self.homePage.driver.title)
+        
 
         self.mainMenu.click_on_my_account_menu_navbar()
         self.mainMenu.go_to_register_page()
@@ -127,16 +125,14 @@ class Test_Register_Functionality(Test_Register_Functionality_Base):
         self.assertTrue(self.driver.find_element(By.XPATH, '//input[@id = "input-newsletter-yes"]').get_attribute('value'), TestData.RADIOBUTTON_NO_VALUE)
 
     def test_TC_RF_007(self):
-        self.homePage = HomePage(self.driver)
+        
         self.mainMenu = MainMenu(self.driver)
         self.loginPage = LoginPage(self.driver)
         self.registerPage = RegisterPage(self.driver)
         self.rightMenu = RightMenu(self.driver)
-        
-        self.assertIn(TestData.HOME_PAGE_TITLE, self.homePage.driver.title)
 
         self.mainMenu.click_on_my_account_menu_navbar()
-        self.mainMenu.go_to_register_page()
+        self.mainMenu.go_to_login_page()
         
         self.assertIn(TestData.LOGIN_PAGE_TITLE, self.loginPage.driver.title)
         self.loginPage.register_new_customer()
@@ -167,6 +163,7 @@ class Test_Register_Functionality(Test_Register_Functionality_Base):
         self.registerPage.continue_to_register()
 
         self.registerPage.display_email_registered_warning_message()
+        
 
     def test_TC_RF_010(self):
         pass

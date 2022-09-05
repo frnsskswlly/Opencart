@@ -2427,3 +2427,242 @@ console.log: "RemoteSettingsWorker error: Error: Can't import when we've started
 console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
 JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 719: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "DoHController: clear state and remove observers"
 JavaScript error: , line 0: AbortError: A request was aborted, for example through a call to IDBTransaction.abort.
+1662349740905	geckodriver	INFO	Listening on 127.0.0.1:49657
+1662349742015	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "59337" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileIUenYA"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1662349746018	Marionette	INFO	Marionette enabled
+1662349746059	Marionette	INFO	Listening on port 35171
+WebDriver BiDi listening on ws://localhost:59337
+Read port: 35171
+1662349747486	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileIUenYA/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59337/devtools/browser/f777bd14-7551-420a-9f58-f46b528357dc
+console.error: services.settings: 
+  main/query-stripping Signature failed  InvalidSignatureError: Invalid content signature (main/query-stripping)
+console.error: services.settings: 
+  main/query-stripping local data was corrupted
+console.warn: services.settings: main/query-stripping Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/query-stripping Signature failed again InvalidSignatureError: Invalid content signature (main/query-stripping)
+1662349763429	Marionette	INFO	Stopped listening on port 35171
+1662350979525	geckodriver	INFO	Listening on 127.0.0.1:38259
+1662350979664	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "34255" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilekSThFf"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1662350981703	Marionette	INFO	Marionette enabled
+1662350981727	Marionette	INFO	Listening on port 34103
+WebDriver BiDi listening on ws://localhost:34255
+Read port: 34103
+1662350982426	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilekSThFf/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:34255/devtools/browser/8a4a6e6b-bc77-43c1-a6df-2dab99208e14
+console.error: services.settings: 
+  main/query-stripping Signature failed  InvalidSignatureError: Invalid content signature (main/query-stripping)
+console.error: services.settings: 
+  main/query-stripping local data was corrupted
+console.warn: services.settings: main/query-stripping Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/query-stripping Signature failed again InvalidSignatureError: Invalid content signature (main/query-stripping)
+1662351001539	Marionette	INFO	Stopped listening on port 34103
+1662351192789	geckodriver	INFO	Listening on 127.0.0.1:43675
+1662351193356	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "49401" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilehWdtxJ"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1662351195665	Marionette	INFO	Marionette enabled
+1662351195678	Marionette	INFO	Listening on port 40305
+WebDriver BiDi listening on ws://localhost:49401
+Read port: 40305
+1662351196314	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilehWdtxJ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49401/devtools/browser/561d2362-3d60-4782-9bfc-3e10768c8d6c
+console.error: services.settings: 
+  main/query-stripping Signature failed  InvalidSignatureError: Invalid content signature (main/query-stripping)
+console.error: services.settings: 
+  main/query-stripping local data was corrupted
+console.warn: services.settings: main/query-stripping Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/query-stripping Signature failed again InvalidSignatureError: Invalid content signature (main/query-stripping)
+1662351214232	Marionette	INFO	Stopped listening on port 40305
+1662351378747	geckodriver	INFO	Listening on 127.0.0.1:47437
+1662351378860	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "55023" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileEYbvua"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1662351380712	Marionette	INFO	Marionette enabled
+1662351380725	Marionette	INFO	Listening on port 36541
+WebDriver BiDi listening on ws://localhost:55023
+Read port: 36541
+1662351381355	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileEYbvua/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55023/devtools/browser/e78d332e-d612-4381-9fa3-0c37fadccc0a
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost."
+console.error: services.settings: 
+  main/query-stripping Signature failed  InvalidSignatureError: Invalid content signature (main/query-stripping)
+console.error: services.settings: 
+  main/query-stripping local data was corrupted
+console.warn: services.settings: main/query-stripping Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/query-stripping Signature failed again InvalidSignatureError: Invalid content signature (main/query-stripping)
+1662351403028	Marionette	INFO	Stopped listening on port 36541
+1662351569852	geckodriver	INFO	Listening on 127.0.0.1:35213
+1662351569968	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "53675" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile84iISF"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1662351571784	Marionette	INFO	Marionette enabled
+1662351571797	Marionette	INFO	Listening on port 33937
+WebDriver BiDi listening on ws://localhost:53675
+Read port: 33937
+1662351572527	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile84iISF/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53675/devtools/browser/976a970e-c503-4f41-8ee1-f00c6074daa6
+console.error: services.settings: 
+  main/query-stripping Signature failed  InvalidSignatureError: Invalid content signature (main/query-stripping)
+console.error: services.settings: 
+  main/query-stripping local data was corrupted
+console.warn: services.settings: main/query-stripping Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/query-stripping Signature failed again InvalidSignatureError: Invalid content signature (main/query-stripping)
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost."
+1662351593986	Marionette	INFO	Stopped listening on port 33937
+1662351659344	geckodriver	INFO	Listening on 127.0.0.1:57925
+1662351659457	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "53615" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileRFYTd7"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1662351661350	Marionette	INFO	Marionette enabled
+1662351661363	Marionette	INFO	Listening on port 41555
+WebDriver BiDi listening on ws://localhost:53615
+Read port: 41555
+1662351662111	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileRFYTd7/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53615/devtools/browser/99843780-5bef-4d21-b8aa-9a391d5f2518
+console.error: services.settings: 
+  main/query-stripping Signature failed  InvalidSignatureError: Invalid content signature (main/query-stripping)
+console.error: services.settings: 
+  main/query-stripping local data was corrupted
+console.warn: services.settings: main/query-stripping Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/query-stripping Signature failed again InvalidSignatureError: Invalid content signature (main/query-stripping)
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost."
+1662351672250	Marionette	INFO	Stopped listening on port 41555
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 693: TypeError: this.tablesData[table] is undefined
+1662351727829	geckodriver	INFO	Listening on 127.0.0.1:55573
+1662351727944	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "60629" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilexlG0Xo"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1662351729911	Marionette	INFO	Marionette enabled
+1662351729926	Marionette	INFO	Listening on port 41405
+WebDriver BiDi listening on ws://localhost:60629
+Read port: 41405
+1662351730576	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilexlG0Xo/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60629/devtools/browser/a1e6a592-6dc0-4841-8ee6-7c4ddfae0ef2
+console.error: services.settings: 
+  main/query-stripping Signature failed  InvalidSignatureError: Invalid content signature (main/query-stripping)
+console.error: services.settings: 
+  main/query-stripping local data was corrupted
+console.warn: services.settings: main/query-stripping Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/query-stripping Signature failed again InvalidSignatureError: Invalid content signature (main/query-stripping)
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost."
+1662351757404	Marionette	INFO	Stopped listening on port 41405
+1662351920037	geckodriver	INFO	Listening on 127.0.0.1:45659
+1662351920152	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "57991" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilecCVEXS"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1662351921951	Marionette	INFO	Marionette enabled
+1662351921966	Marionette	INFO	Listening on port 35231
+WebDriver BiDi listening on ws://localhost:57991
+Read port: 35231
+1662351922571	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilecCVEXS/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57991/devtools/browser/666a4d33-9e6a-4d74-bca5-b1cfbab09edf
+console.error: services.settings: 
+  main/query-stripping Signature failed  InvalidSignatureError: Invalid content signature (main/query-stripping)
+console.error: services.settings: 
+  main/query-stripping local data was corrupted
+console.warn: services.settings: main/query-stripping Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/query-stripping Signature failed again InvalidSignatureError: Invalid content signature (main/query-stripping)
+1662351941736	Marionette	INFO	Stopped listening on port 35231
+1662351989484	geckodriver	INFO	Listening on 127.0.0.1:41629
+1662351989600	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "44113" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileeVMNMe"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1662351991899	Marionette	INFO	Marionette enabled
+1662351991916	Marionette	INFO	Listening on port 35463
+WebDriver BiDi listening on ws://localhost:44113
+Read port: 35463
+1662351992518	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileeVMNMe/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:44113/devtools/browser/2dd6b8fc-0063-4676-a945-0f7e000bc4ca
+console.error: services.settings: 
+  main/query-stripping Signature failed  InvalidSignatureError: Invalid content signature (main/query-stripping)
+console.error: services.settings: 
+  main/query-stripping local data was corrupted
+console.warn: services.settings: main/query-stripping Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/query-stripping Signature failed again InvalidSignatureError: Invalid content signature (main/query-stripping)
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost."
+1662352005310	Marionette	INFO	Stopped listening on port 35463
+1662352105628	geckodriver	INFO	Listening on 127.0.0.1:38503
+1662352105742	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "48383" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileP16I7c"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1662352107561	Marionette	INFO	Marionette enabled
+1662352107575	Marionette	INFO	Listening on port 40467
+WebDriver BiDi listening on ws://localhost:48383
+Read port: 40467
+1662352108271	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileP16I7c/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:48383/devtools/browser/287a217f-e224-44a2-8c18-8411ab1165f6
+console.error: services.settings: 
+  main/query-stripping Signature failed  InvalidSignatureError: Invalid content signature (main/query-stripping)
+console.error: services.settings: 
+  main/query-stripping local data was corrupted
+console.warn: services.settings: main/query-stripping Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/query-stripping Signature failed again InvalidSignatureError: Invalid content signature (main/query-stripping)
+1662352122345	Marionette	INFO	Stopped listening on port 40467
+1662352195454	geckodriver	INFO	Listening on 127.0.0.1:46979
+1662352195576	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "45383" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile4rnRqi"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1662352197648	Marionette	INFO	Marionette enabled
+1662352197661	Marionette	INFO	Listening on port 39647
+WebDriver BiDi listening on ws://localhost:45383
+Read port: 39647
+1662352198381	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile4rnRqi/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:45383/devtools/browser/69008904-4065-4027-ae32-28ece0413ef7
+console.error: services.settings: 
+  main/query-stripping Signature failed  InvalidSignatureError: Invalid content signature (main/query-stripping)
+console.error: services.settings: 
+  main/query-stripping local data was corrupted
+console.warn: services.settings: main/query-stripping Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/query-stripping Signature failed again InvalidSignatureError: Invalid content signature (main/query-stripping)
+1662352212596	Marionette	INFO	Stopped listening on port 39647

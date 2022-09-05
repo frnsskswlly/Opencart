@@ -169,6 +169,14 @@ class NewsletterPage(BasePage):
     # def check_default_subscribe_radio_button(self):
     #     self.get_attribute_by_value(Locators.NEWSLETTER_SUBSCRIBE_YES_RADIO_BUTTON)
 
+class SearchResultPage(BasePage):
+    def __init__(self, driver):
+        super().__init__(driver)
+
+    def check_search_results(self):
+        self.assert_element_text(Locators.SEARCH_RESULTS, TestData.SEARCH_TERM)
+
+
 class MainMenu(BasePage):
     
     def __init__(self, driver):
@@ -178,7 +186,6 @@ class MainMenu(BasePage):
         self.click(Locators.MY_ACCOUNT_MENU_NAVBAR)
 
     def go_to_register_page(self):
-        self.click(Locators.MY_ACCOUNT_MENU_NAVBAR)
         self.click(Locators.REGISTER_SUBMENU_NAVBAR)
 
     def go_to_login_page(self):
@@ -199,6 +206,7 @@ class ActionSection(BasePage):
     
     def click_on_search_button(self):
         self.click(Locators.SEARCH_BUTTON)
+        time.sleep(5)
 
 
 class RightMenu(BasePage):
